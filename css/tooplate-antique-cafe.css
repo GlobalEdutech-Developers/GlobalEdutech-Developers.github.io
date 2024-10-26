@@ -39,6 +39,17 @@ body {
     width: 40%;
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.text-size-NEOD {
+    font-size: 4rem;
+    line-height: 1;
+}
+
 .heffect {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -54,6 +65,12 @@ body {
     color: white; /* Ensure text is visible */
     padding: 5px;
     border-radius: 5px;
+}
+
+.m-NEOD-1p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: -1.5rem;
 }
 
 .non-clickable {
@@ -326,5 +343,11 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 
     .tm-menu-item-2 img {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tm-intro-width {
+        padding: 0 10px;
     }
 }
