@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO Skill Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+</head>
+<body>
+    <!-- Intro -->
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/demo-image.png">
+        <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Labs</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
+                </ul>
+            </div>            
+        </nav>
+        <div class="container m-NEOD-1p px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-opacity-70 p-12 text-left m-NEOD-1p">
+                    <h1 class="tm-text-black text-5xl">Nurture. Explore. Overcome. Develop.</h1>
+                    <!-- <p class="tm-text-black tm-text-2xl">Beyond Learning!</p> -->
+                </div>    
+                <div class="bg-opacity-70 p-10">
+                    <p class="tm-text-black leading-8 text-sm font-normal ml-3">
+                        Neod provides cutting-edge robotics kits and educational resources to unleash your creativity and passion for robotics. </p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block">
+                        <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-4 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
+                            <span>Let's explore...</span>                        
+                        </a>
+                    </div>                    
+                </div>                
+            </div>
+        </div>        
+    </div>
+    <!-- Labs -->
+    <div id="menu" class="parallax-window bg-color-white" data-parallax="scroll"> <!--data-image-src="img/quotscientist-advanced-robotics-labquot.jpg"-->
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="text-center mb-16">
+                <h2 class="bg-black bg-opacity-70 tm-text-yellow py-6 px-12 text-4xl font-medium inline-block rounded-md">Our Offerings</h2>
+            </div>            
+            
+            <div class="flex flex-col lg:flex-row justify-around items-center">
+                <!-- Left Column -->
+                <div class="flex flex-col">
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item">
+                            <img src="img/elec lab 1.jpg" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="electronicsLabButton">Electronics Lab</h3>
+                                <button onclick="openModal('electronicsLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item">
+                            <img src="img/sen lab 1.jpeg" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="sensorsLabButton">Sensors Lab</h3>
+                                <button onclick="openModal('sensorsLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item">
+                            <img src="img/rob lab 1.jpg" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="roboticsLabButton">Robotics Lab</h3>
+                                <button onclick="openModal('roboticsLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item">
+                            <img src="img/dro lab 1.png" alt="Image" class="rounded-md">
+                            <div class="ml-3 sm:ml-6 mt">
+                                <h3 class="text-lg sm:text-xl tm-text-yellow mb-2 sm:mb-3 non-clickable" id="droneLabButton">Drone Lab</h3>
+                                <button onclick="openModal('droneLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Column -->
+                <div class="flex flex-col">
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item justify-end">
+                            <div class="text-right mr-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="printingLabButton">3D Printing Lab</h3>
+                                <button onclick="openModal('printingLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                            <img src="img/3d lab 1.png" alt="Image" class="rounded-md">
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item justify-end">
+                            <div class="text-right mr-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="arvrLabButton">AR VR Lab</h3>
+                                <button onclick="openModal('arvrLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                            <img src="img/ar vr 2.jpg" alt="Image" class="rounded-md">
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item justify-end">
+                            <div class="text-right mr-6 mt">
+                                <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow non-clickable" id="aimlLabButton">AI & ML Lab</h3>
+                                <button onclick="openModal('aimlLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div>
+                            <img src="img/ai ml 1.jpg" alt="Image" class="rounded-md">
+                        </div>
+                    </div>
+            
+                    <div class="bg-black bg-opacity-70 m-5 rounded-xl px-4 py-6 tm-item-container">
+                        <div class="flex items-start tm-menu-item justify-end">    
+                            <div class="text-right mr-6 mt">
+                                <h3 class="text-lg sm:text-xl tm-text-yellow mb-2 sm:mb-3 non-clickable" id="iotLabButton">IoT Lab</h3>
+                                <button onclick="openModal('iotLab')" class="heffect button sm:text-lg font-light hover:text-yellow-500">Details</button>
+                            </div> 
+                            <img src="img/iot lab 1.png" alt="Image" class="rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>        
+    </div>
+    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/2isometric robotics kids education banners.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="tm-item-container-aboutus text-center sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4 rounded-md bg-white bg-opacity-80">
+                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">About us</h2>
+                    <p class="text-base leading-8">
+                        NeoD Global Edutech is revolutionizing education with NEO Skill Labs, offering immersive labs.
+                        Our innovative approach  empowers students to explore, experiment, and excel in STEM subjects, fostering a deeper understanding and passion for learning.
+                        With cutting-edge technology and engaging curriculum, NeoD is shaping the future of education worldwide.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md mb-6">
+                        <i class="far fa-comments mr-4"></i>
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="parallax-window relative bg-color-lastpage" data-parallax="scroll" data-image-src="">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
+                    <p class="mb-6 text-lg leading-8">
+                        1162, Office no. 2, Crescent Exclusive, Shimla office, Behind Pune Observatory, Revenue Colony, Pune, Maharashtra 411005.    
+                    </p>
+                    <p class="mb-10 text-lg">
+                        <span class="block mb-2">Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition">010-020-0340</a></span>
+                        <span class="block">Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ag@globaledutech.in" class="hover:text-yellow-600 transition">ag@globaledutech.in</a></span>
+                    </p>
+                    <div>
+                        <a href="https://www.google.com/maps/place/NEOD+Global+Pvt+ltd/@18.5292806,73.8480095,15z/data=!4m6!3m5!1s0x3bc2c1335537199b:0x4306502d673cb215!8m2!3d18.5292806!4d73.8480095!16s%2Fg%2F11sj6__bfp?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" class="inline-block text-white text-2xl pl-openmaps pr-openmaps py-4 rounded-lg transition tm-bg-green">
+                            <i class="fas fa-map-marked-alt mr-6"></i>
+                            Open Maps
+                        </a>
+                    </div>                    
+                </div>
+                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
+                    <form action="https://formsubmit.co/ag@globaledutech.in" method="POST" class="text-lg">
+                        <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
+                        <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
+                        <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message..." required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Modal Header</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="heffect rounded-xl modal-container bg-color-info mb-4">
+                    <p id="modalContent"></p>
+                </div>
+                <div class="heffect rounded-xl modal-container bg-color-info mb-4">
+                    <p id="modalContent2"></p>
+                </div>
+                <div class="heffect rounded-xl modal-container bg-color-info mb-4">
+                    <p id="modalContent3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+
+        function checkAndShowHideMenu() {
+            if(window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');                
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(function(){
+            var tmNav = $('#tm-nav');
+            tmNav.singlePageNav();
+
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function(){
+                $('#tm-nav ul').toggleClass('hidden');
+            });
+
+            $('#tm-nav ul li').click(function(){
+                if(window.innerWidth < 768) {
+                    $('#tm-nav ul').addClass('hidden');
+                }                
+            });
+
+            $(document).scroll(function() {
+                var distanceFromTop = $(document).scrollTop();
+
+                if(distanceFromTop > 100) {
+                    tmNav.addClass('scroll');
+                } else {
+                    tmNav.removeClass('scroll');
+                }
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Information for each lab
+        const labInfo = {
+            'electronicsLab': {
+                title: 'Electronics Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Identify and name basic electronic components.<br>Assemble simple circuits.</li>
+                    <li>Understand resistor color coding.<br>Assemble circuits.</li>
+                    <li>Design and troubleshoot circuits with ICs.<br>Explore sensor application.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Explore applications of electronic components.</li>
+                    <li>Learn to create & troubleshoot basic circuits.</li>
+                    <li>Understand fundamental electronic components.</li>
+                </ul>`,
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Fancy Lights Project.<br>Water Level Monitor Project.<br>Anti theft Alert.<br>Magic Remote Control.<br>Gas Safety Project.</li>
+                    <li>Steady Hand.<br>Earthquake Warning.<br>Fire Safety Project.<br>Bag Safety Alert.<br>People Counter Project... & many more.</li>
+                </ul>`
+            },
+            'sensorsLab': {
+                title: 'Sensors Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Identify basic sensors.<br>Create simple mechatronic system.</li>
+                    <li>Explore more sensors.<br>Integrate sensors into interactive projects.</li>
+                    <li>Understand IoT concepts.<br>Design and implement IoT-based projects.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Understand the principles and application of sensors.</li>
+                    <li>Learn to integrate sensors into mechatronic systems.</li>
+                    <li>Gain hands-on experience in creating automated systems.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Snack Vendor.<br>Counting Conveyor.<br>Height Watcher.<br>Signal Controller.<br>Page Flipper.</li>
+                    <li>Lift Sysem.<br>Launch Catapult.<br>Item Sorter.<br>Sterilizing Station.<br>Gate Automator... & many more.</li>
+                </ul>`
+            },
+            'roboticsLab': {
+                title: 'Robotics Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Identify robot components.<br>Assemble basic line-following robots.</li>
+                    <li>Introduce Arduino programming basics.<br>Program robots for specific tasks.</li>
+                    <li>Explore advanced sensors.<br>Design and build autonomous robots.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Gain a foundational understanding of robotics.</li>
+                    <li>Learn to program and control robots.</li>
+                    <li>Develop problem-solving skills through hands-on projects.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Pick and Place Robot.<br>Bluetooth Bot.<br>Line Tracker.<br>Avoidance Bot.<br>Spider Walker.</li>
+                    <li>Chatter Bot.<br>Remote Rover.<br>Flame Fighter.<br>Gesture Guide.<br>Floor Cleaner... & many more.</li>
+                </ul>`
+            },
+            'droneLab': {
+                title: 'Drone Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Understand AR/VR concepts and applications.<br>Learn to program basic AR/VR experiences.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Understand the basics of drone technology.</li>
+                    <li>Learn to operate and program drones.</li>
+                    <li>Apply drone technolgy to solve real-world problems.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Package Delivery Drone.<br>Drone Photography.<br>Geo Locate Drone.<br>Arduino program for Drone.<br>Security Drone... & many more.</li>
+                </ul>`
+            },
+            'printingLab': {
+                title: '3D Printing Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Introduce basic 3D printing concepts.<br>Learn to use beginner-friendly 3D design software.</li>
+                    <li>Explore advanced 3D design concepts.<br>Understand the 3D printing process in-depth.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Understand the basics of 3D printing technology.</li>
+                    <li>Learn 3D design using software tools.</li>
+                    <li>Create and print 3D models.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Mobile Holder Stand.<br>Key Chain Craft.<br>Gear Creation Project.<br>Shaft and Pulley System.<br>Robo Frame Assembly.</li>
+                    <li>Spirograph Art Creation.<br>Decorative Coaster Design.<br>Toy Design Workshop.<br>Creative Key Hanger.<br>Puzzle Craft Challenge... & many more.</li>
+                </ul>`
+            },
+            'arvrLab': {
+                title: 'AR VR Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Introduce drone technology and components.<br>Learn to pilot and program drones.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Introduce Augmented Reality (AR) and Virtual Reality (VR) concepts.</li>
+                    <li>Explore basic AR/VR programming.</li>
+                    <li>Develop interactive AR/VR applications.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Interactive virtual tours.<br>360 VR Video.<br>Augmented reality storytelling.<br>AR Textbooks... & many more.</li>
+                </ul>`
+            },
+            'aimlLab': {
+                title: 'AI & ML Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Introduce Python programming.<br>Understand basic AI concepts and machine learning.</li>
+                    <li>Dive deeper into Python programming.<br>Implement more advanced machine learning projects.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Introduce the basics of Artificial Intelligence (AI).</li>
+                    <li>Understand data types, variables, and basic machine learning concepts.</li>
+                    <li>Apply AI concepts to real-world projects.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Object Identifier App.<br>Smart Lane Tracker.<br>Conversational AI Buddy.<br>Face Recognition Tech.</li>
+                    <li>Musical Hand Gestures.<br>Playful Gesture Games.<br>Face-Tracking Robot.<br>Fruit Recognition App.<br>Home Automation Wizard... & many more.</li>
+                </ul>`
+            },
+            'iotLab': {
+                title: 'IoT Lab',
+                content: `<h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Explore IoT hardware and software.<br>Learn to design and implement IoT projects.</li>
+                </ul>`,
+
+                content2: `<h4>Learning Outcomes:</h4>
+                <ul>
+                    <li>Introduce the principles of Internet of Things (IoT).</li>
+                    <li>Understand IoT concepts and protocols.</li>
+                    <li>Create IoT-based projects.</li>
+                </ul>`,
+
+                content3: `<h4>Project Topics:</h4>
+                <ul>
+                    <li>Home Automation App Wizardry.<br>Wireless Rover Innovation.<br>Flood Watch Sentinel.<br>Health Guardian Robot System.</li>
+                    <li>Auto Park Manager.<br>Ceremony Illuminator Creation.<br>Wealth Tracker Setup.<br>Water Tank Watchdog.<br>Greenhouse Guardian... & many more.</li>
+                </ul>`
+            }
+        };
+        
+        // Function to open modal
+        function openModal(lab) {
+            const modal = document.getElementById("myModal");
+            const modalTitle = document.getElementById("modalTitle");
+            const modalContent = document.getElementById("modalContent");
+            const modalContent2 = document.getElementById("modalContent2");
+            const modalContent3 = document.getElementById("modalContent3");
+        
+            modalTitle.innerHTML = labInfo[lab].title; // Set modal title
+            modalContent.innerHTML = labInfo[lab].content;
+            modalContent2.innerHTML =  labInfo[lab].content2;
+            modalContent3.innerHTML = labInfo[lab].content3; // Set modal content
+        
+            modal.style.display = "block"; // Show the modal
+        }
+        
+        // Get the close button
+        const span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on any lab heading, open the modal
+        // document.getElementById("electronicsLabButton").onclick = function() { openModal('electronicsLab'); };
+        // document.getElementById("sensorsLabButton").onclick = function() { openModal('sensorsLab'); };
+        // document.getElementById("roboticsLabButton").onclick = function() { openModal('roboticsLab'); };
+        // document.getElementById("droneLabButton").onclick = function() { openModal('droneLab'); };
+        // document.getElementById("printingLabButton").onclick = function() { openModal('printingLab'); };
+        // document.getElementById("arvrLabButton").onclick = function() { openModal('arvrLab'); };
+        // document.getElementById("aimlLabButton").onclick = function() { openModal('aimlLab'); };
+        // document.getElementById("iotLabButton").onclick = function() { openModal('iotLab'); };
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        document.getElementById("myModal").style.display = "none"; // Hide the modal
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+            document.getElementById("myModal").style.display = "none"; // Hide if clicked outside
+        }
+        }
+    </script>
+
+</body>
+</html>
